@@ -138,11 +138,11 @@ nav {
 }
 
 #arrow-prev {
-  background-image: url("/pagina-cupom/img/arrow_prev.svg");
+  background-image: url("img/arrow_prev.svg");
 }
 
 #arrow-next {
-  background-image: url("/pagina-cupom/img/arrow_next.svg");
+  background-image: url("img/arrow_next.svg");
 }
 
 @media (min-width: 950px) {
@@ -165,14 +165,6 @@ nav {
     display: flex;
     justify-content: space-between;
     max-width: 60%;
-  }
-
-  .cupom-card {
-    max-width: 250px;
-  }
-  .cupom-card p {
-    max-width: 70%;
-    margin: 20px auto;
   }
 
   .cupom .imagem-cupom {

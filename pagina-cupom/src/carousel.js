@@ -3,26 +3,26 @@ $(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    centerMode: true,
     prevArrow: $("#arrow-prev"),
     nextArrow: $("#arrow-next"),
     responsive: [
       {
-        breakpoint: 1500,
+        breakpoint: 1268,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 1350,
+        breakpoint: 820,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 740,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
         },
       },
     ],
