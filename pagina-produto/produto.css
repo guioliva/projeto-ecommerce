@@ -160,14 +160,14 @@ nav .logo img {
   background-image: url("img/arrow_next.svg");
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .container-search {
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: center;
   }
