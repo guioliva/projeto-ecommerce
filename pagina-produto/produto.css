@@ -23,7 +23,7 @@ nav {
 }
 
 nav .logo img {
-  width: 200px;
+  width: 80px;
 }
 
 .container-search {
@@ -72,15 +72,28 @@ nav .logo img {
 }
 
 .cupom .titulo {
+  font-size: 3rem;
   font-weight: 700;
   color: var(--primary-color);
+  margin-bottom: 60px;
 }
 
 .cupom .descricao {
   padding: 20px 10px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
+.cupom .preco {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.cupom .tipos-pagamento img {
+  width: 30px;
+  padding: 2px;
+}
 .link-site {
   text-decoration: none;
   font-weight: 500;
@@ -90,6 +103,10 @@ nav .logo img {
   border-radius: 20px;
   background-color: var(--secondary-color);
   transition: all 0.8s;
+}
+
+.link-site img {
+  width: 70px;
 }
 
 .link-site:hover {
@@ -102,6 +119,7 @@ nav .logo img {
 }
 
 .titulo-sugeridos img {
+  width: 100px;
   max-width: 60%;
   margin-left: 0.5rem;
 }
@@ -114,30 +132,15 @@ nav .logo img {
   align-items: center;
 }
 
-.cupom-card {
-  max-width: 200px;
-  background-color: #ffeded;
-  padding: 30px 20px;
-  border-radius: 20px;
-  margin: 10px;
+.produto-card {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.desconto {
-  display: flex;
-  justify-content: center;
-}
-
-.desconto .valor-desconto h4 {
-  font-size: 40px;
-}
-
-.desconto .icon-desconto {
-  position: relative;
-  bottom: 30px;
-}
-
-.cupom-card p {
-  font-size: 12px;
+.produto-card .img-produto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 .arrow {
@@ -178,7 +181,7 @@ nav .logo img {
   }
 
   .cupom {
-    max-width: 70%;
+    max-width: 85%;
     display: flex;
     justify-content: space-between;
   }
@@ -198,6 +201,6 @@ nav .logo img {
   }
 
   .sugeridos {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
