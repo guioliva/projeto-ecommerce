@@ -1,0 +1,99 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #FFE600;
+    color: #817BB8;
+  }
+  
+  .navbar .nav-link {
+    color: #817BB8;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #817BB8;
+  }
+  
+  .navbar .form-inline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar .form-inline .form-control {
+    width: 400px;
+  }
+  
+  .jumbotron {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .jumbotron p {
+    font-size: 24px;
+  }
+  
+  .products-container {
+    padding: 50px 0;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .cta-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .cta-section p {
+    font-size: 18px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
