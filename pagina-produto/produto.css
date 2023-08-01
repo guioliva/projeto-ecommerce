@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
-  --main-color: #e9f1f2;
-  --primary-color: #8aa6a3;
-  --secondary-color: #012619;
+  --main-color: #f5f5f5;
+  --primary-color: #5f5991;
+  --secondary-color: #2a1a3f;
 }
 
 body {
@@ -18,8 +18,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-
-  border-bottom: 3px solid rgba(92, 92, 92, 0.8);
+  border-bottom: 3px solid rgba(161, 143, 173, 0.8);
 }
 
 nav .logo img {
@@ -53,7 +52,7 @@ nav .logo img {
 
 .cupom {
   max-width: 750px;
-  margin: 300px auto;
+  margin: 150px auto;
 }
 
 .cupom .imagem-cupom {
