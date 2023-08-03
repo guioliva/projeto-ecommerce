@@ -10,12 +10,12 @@
   <style>
     /* Custom styles */
     body {
-      background-color: #f8f9fa;
+      background-color: #817bb8;
       font-family: Arial, sans-serif;
     }
 
     .navbar {
-      background-color: #985288;
+      background-color: #333;
       color: #fff;
     }
 
@@ -53,6 +53,7 @@
     }
 
     .products-container {
+      color: #fff;
       padding: 50px 0;
     }
 
@@ -71,6 +72,7 @@
     }
 
     .product-card h4 {
+      color: #e62b4a;
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;
@@ -81,8 +83,12 @@
       color: #888;
     }
 
+    .category-section {
+      color: #fff;
+    }
+
     .cta-section {
-      background-color: #985288;
+      background-color: #2a1a3f;
       color: #fff;
       padding: 50px;
       text-align: center;
@@ -117,6 +123,11 @@
     /* Payment Icons */
     .footer .payment-icons {
       margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #e62b4a;
+      color: #fff;
     }
 
     .footer .payment-icons i {
@@ -182,6 +193,7 @@
         <!-- End Cart Icon -->
       </div>
     </div>
+    <!-- End Navigation -->
   </nav>
 
   <!-- Carousel -->
@@ -215,7 +227,7 @@
 <!-- Products Section -->
 <div class="container products-container">
   <!-- Category Title -->
-  <h2>Mais vendidos</h2>
+  <h2>Sugestão de Produtos:</h2>
   
   <div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
     <div class="carousel-inner">
@@ -358,37 +370,41 @@
   </div>
 </div>
 ``
-<!-- New "Confira" Section -->
-<section class="confira-section py-5">
-  <div class="container">
+<!-- New "Category" Section -->
+<section class="category-section py-5">
+    <!-- Category Title -->
+  <div class="container category-container">
+    <h2>Confira estas Categorias:</h2>
+  </div>>
+    <div class="container">
     <div class="row">
       <!-- Box 1 -->
       <div class="col-md-4">
-        <div class="confira-box">
+        <div class="category-box">
           <img src="path/to/box3-image" alt="Box 1 Image">
           <h4>Small Title 1</h4>
           <h2>Big Title 1</h2>
-          <a href="path/to/box1" class="btn btn-primary">Enter</a>
+          <a href="path/to/box1" class="btn btn-light">Enter</a>
         </div>
       </div>
       
       <!-- Box 2 -->
       <div class="col-md-4">
-        <div class="confira-box">
+        <div class="category-box">
           <img src="path/to/box3-image" alt="Box 2 Image">
           <h4>Small Title 2</h4>
           <h2>Big Title 2</h2>
-          <a href="path/to/box2" class="btn btn-primary">Enter</a>
+          <a href="path/to/box2" class="btn btn-light">Enter</a>
         </div>
       </div>
       
       <!-- Box 3 -->
       <div class="col-md-4">
-        <div class="confira-box">
+        <div class="category-box">
           <img src="path/to/box3-image" alt="Box 3 Image">
           <h4>Small Title 3</h4>
           <h2>Big Title 3</h2>
-          <a href="path/to/box3" class="btn btn-primary">Enter</a>
+          <a href="path/to/box3" class="btn btn-light">Enter</a>
         </div>
       </div>
       
@@ -399,14 +415,14 @@
   <!-- Call to Action Section -->
   <div class="cta-section">
     <div class="container">
-      <h2>O que é a udecor?</h2>
-      <p>Subscribe to our newsletter and stay updated with the latest offers.</p>
+      <h2>Quer estar por dentro de tudo sobre a udecora?</h2>
+      <p>Assine nossa NEWSLETTER e descubra todas as novidades.</p>
       <form class="form-inline justify-content-center">
         <div class="form-group mx-sm-3 mb-2">
           <label for="newsletterEmail" class="sr-only">Email</label>
-          <input type="email" class="form-control" id="newsletterEmail" placeholder="Your Email">
+          <input type="email" class="form-control" id="newsletterEmail" placeholder="Email">
         </div>
-        <button type="submit" class="btn btn-light mb-2">Subscribe</button>
+        <button type="submit" class="btn btn-light mb-2">Inscreva-se</button>
       </form>
     </div>
   </div>
@@ -421,9 +437,8 @@
         <!-- Add more payment icons as needed -->
       </div>
       <p class="company-info">
-        &copy; 2023 udecora. All rights reserved. | Udecora Ltda. | Alameda Presidente Taunay | Curitiba, Paraná,
-        80430042 | Brasil |
-        Contato: 4004-8000 | Email: info@udecora.com
+        &copy; 2023 udecora. All rights reserved. | Udecora Ltda. | São Paulo, Brasil |
+        Contato: 0800 000 000 | Email: info@udecora.com
       </p>
     </div>
   </footer>
