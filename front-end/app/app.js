@@ -19,6 +19,5 @@ function getCategories(){
 }
 
 document.addEventListener('DOMContentLoaded', function (event){
-    AOS.init();
     getCategories();
 })

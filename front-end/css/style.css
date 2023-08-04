@@ -48,6 +48,7 @@
 
 .carousel .carousel-item #slide {
   text-align: center;
+  position: relative;
   z-index: -1;
 }
 
