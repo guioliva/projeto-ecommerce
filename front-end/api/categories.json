@@ -1,0 +1,29 @@
+[
+    {
+        "categoryName": "Desenho e Ilustração",
+        "categoryDate": "2023-08-03",
+        "categoryDescription": "Aqui, você encontrará um universo de arte visual expressado por meio de traços e cores",
+        "categoryImage": "images/DesenhoIlustração/3.png"
+    },
+    
+    {
+        "categoryName": "Fotografia",
+        "categoryDate": "2023-08-03",
+        "categoryDescription": "Aqui, você encontrará momentos congelados no tempo, capturados com maestria por talentosos fotógrafos",
+        "categoryImage": "images/Fotografia/0.png"
+    },
+
+    {
+        "categoryName": "Pintura",
+        "categoryDate": "2023-08-03",
+        "categoryDescription": "Aqui, você encontrará uma galeria de arte vibrante e cativante, repleta de pinturas criadas por diversos artistas",
+        "categoryImage": "images/Pintura/0.png"
+    },
+
+    {
+        "categoryName": "Tipografia",
+        "categoryDate": "2023-08-03",
+        "categoryDescription": "Aqui, você encontrará a fusão perfeita entre arte e palavras, onde a tipografia ganha vida e se transforma em verdadeiras obras de arte",
+        "categoryImage": "images/Tipografia/2.png"
+    }
+]

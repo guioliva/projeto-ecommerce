@@ -1,0 +1,17 @@
+[
+    {
+        "productName": "Desenho Menina com Lápis",
+        "productPrice": "$0.99",
+        "productDate": "2023-08-03",
+        "productDescription": "Desenho de uma menina com lapis coloridos",
+        "productImage": "images/DesenhoIlustração/3.png"
+    },
+
+    {
+        "productName": "",
+        "productPrice": "",
+        "productDate": "",
+        "productDescription": "",
+        "productImage": ""
+    }
+]
