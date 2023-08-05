@@ -10,8 +10,8 @@ function transformCategoriesHtml(categoryName, categoryDate, categoryDescription
 }
 
 function getCategories(){
-    fetch("api/categories.json")
-    .then((resposta) => resposta.json())
+    fetch("api/categories.json", {mode:'no-cors'})
+    .then((resposta) => console.log(resposta.json()))
     .then((dados) => {
         dados.map(data => transformCategoriesHtml(data.categoryName, data.categoryDescription, data.categoryImage)
         );

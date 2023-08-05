@@ -1,4 +1,5 @@
-[
+{
+"data": [
     {
         "categoryName": "Desenho e Ilustração",
         "categoryDate": "2023-08-03",
@@ -27,3 +28,4 @@
         "categoryImage": "images/Tipografia/2.png"
     }
 ]
+}
