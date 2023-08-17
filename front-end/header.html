@@ -1,90 +1,129 @@
 <style>
-    /* Custom styles */
-    body {
-      background-color: #817bb8;
-      font-family: Arial, sans-serif;
-    }
+  /* Custom styles */
+  body {
+    background-color: #817bb8;
+    font-family: Arial, sans-serif;
+  }
 
-    .navbar {
-      background-color: #333;
-      color: #fff;
-    }
+  .navbar {
+    background-color: #333;
+    color: #fff;
+  }
 
-    .navbar .nav-link {
-      color: #fff;
-    }
+  .navbar .nav-link {
+    color: #fff;
+  }
 
-    .navbar .nav-link:hover {
-      color: #fff;
-    }
+  .navbar .nav-link:hover {
+    color: #fff;
+  }
 
-    .navbar .form-inline {
-      margin-left: auto;
-      margin-right: 0;
-    }
+  .navbar .form-inline {
+    margin-left: auto;
+    margin-right: 0;
+  }
 
-    .navbar .form-inline .form-control {
-      width: 400px;
-    }
+  .navbar .form-inline .form-control {
+    width: 400px;
+  }
 
-    /* Cart Icon */
-    .navbar .btn-light {
-      margin-right: 10px;
-    }
-    
-  </style>
+  /* Cart Icon */
+  .navbar .btn-light {
+    margin-right: 10px;
+  }
+</style>
 
 <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg" width="100%">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
-              <img src="images/logo.png" alt="Logo" style="width: 120px; height: 120px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Categorias</a>
-                  <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                    <a class="dropdown-item" href="#">Category 1</a>
-                    <a class="dropdown-item" href="#">Category 2</a>
-                    <a class="dropdown-item" href="#">Category 3</a>
-                    <a class="dropdown-item" href="#">Category 4</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Histórico</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
-                </li>
-              </ul>
-              <!-- Cart Icon -->
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                  <i class="fas fa-search"></i> <!-- Search icon from Font Awesome -->
-                </button>
-              </form>
-              <a class="btn btn-light ml-2" href="#" role="button">
-                <i class="fas fa-shopping-cart"></i> <!-- Cart icon from Font Awesome -->
-              </a>
-              <!-- End Cart Icon -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="d-flex-justify">
+      <a class="navbar-brand" href="#">
+        <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
+        <img
+          src="images/logo.png"
+          alt="Logo"
+          style="width: 120px; height: 120px"
+        />
+      </a>
+    </div>
+    <div class="d-flex-content">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown"></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="categoriesDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Categorias</a
+            >
+            <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <a class="dropdown-item" href="#">Desenho e Ilustração</a>
+              <a class="dropdown-item" href="#">Fotografia</a>
+              <a class="dropdown-item" href="#">Pintura</a>
+              <a class="dropdown-item" href="#">Tipografia</a>
             </div>
-          </div>
-          <!-- End Navigation -->
-        </nav>, initial-scale=1.0">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Crie sua conta</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex-around">
+      <!-- Search Bar and Icon -->
+      <form class="form-inline my-2 my-lg-0" role="search">
+        <input
+          class="form-control my-2 my-sm-0"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success-light my-2 my-sm-0"
+          type="submit"
+        >
+          <i class="fas fa-search"></i>
+        </button>
+        <!-- End Search Bar and Icon -->
+        <!-- Cart Icon -->
+        <button
+          class="btn btn-outline-success-light ml-2 my-sm-0"
+          href="#"
+          role="button"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </form>
+      <!-- End Cart Icon -->
+    </div>
+  </div>
+  <!-- End Navigation -->
+</nav>
 
 <!-- Add the Header in the other pages -->
 <!-- XXXXX -->

@@ -62,11 +62,14 @@
                   >Categorias</a
                 >
                 <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                  <a class="dropdown-item" href="#">Category 1</a>
-                  <a class="dropdown-item" href="#">Category 2</a>
-                  <a class="dropdown-item" href="#">Category 3</a>
-                  <a class="dropdown-item" href="#">Category 4</a>
+                  <a class="dropdown-item" href="#">Desenho e Ilustração</a>
+                  <a class="dropdown-item" href="#">Fotografia</a>
+                  <a class="dropdown-item" href="#">Pintura</a>
+                  <a class="dropdown-item" href="#">Tipografia</a>
                 </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contato</a>
@@ -95,12 +98,16 @@
             >
               <i class="fas fa-search"></i>
             </button>
+            <!-- End Search Bar and Icon -->
+            <!-- Cart Icon -->
+            <button
+              class="btn btn-outline-success-light ml-2 my-sm-0"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </button>
           </form>
-          <!-- End Search Bar and Icon -->
-          <!-- Cart Icon -->
-          <a class="btn btn-light ml-2" href="#" role="button">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
           <!-- End Cart Icon -->
         </div>
       </div>
@@ -175,13 +182,15 @@
     </div>
 
     <!-- Products Section -->
-    <h2>Mais vendidos</h2>
-    <div id="productDisplay" class="products-main"></div>
+    <div class="product-section">
+      <h2 class="product-section-title">Mais vendidos</h2>
+      <div id="productDisplay" class="products-main"></div>
+    </div>
 
-    <!-- New "Category" Section -->
+    <!-- Category Section -->
     <section class="category-section py-5">
       <!-- Category Title -->
-      <div class="container category-container"></div>
+      <div class="container category-container">Confira estas categorias</div>
       <div class="container">
         <div class="row" id="divCategories">
           <div class="col-md-4">
