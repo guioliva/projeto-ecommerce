@@ -1,0 +1,8 @@
+/main         /index.html  200
+/catalog/*    /pages/indexCatalog.html  200
+/product/*      /pages/indexProduct.html  200
+/contact/*      /pages/indexContact.html  200
+/userlogin/*      /pages/indexUserLogin.html  200
+/usersign/*      /pages/indexUserSign.html  200
+
+/* /indexMain.html 200
