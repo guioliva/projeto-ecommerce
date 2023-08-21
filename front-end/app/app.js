@@ -242,6 +242,41 @@ function updateCartCount() {
     cartCountElement.textContent = cart.length;  // Assuming 'cart' is your array of products
 }
 
+// função para post de usuário
+
+function postUser(){
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Extract data from the form
+        const firstName = document.getElementById("registrationFirstName").value;
+        const lastName = document.getElementById("registrationLastName").value;
+        const email = document.getElementById("registrationEmail").value;
+        const password = document.getElementById("registrationPassword").value;
+
+        // Send the data to your API
+        fetch("https://udecora-backend.up.railway.app/users", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+}
+
 
 
 
