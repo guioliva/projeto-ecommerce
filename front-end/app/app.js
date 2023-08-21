@@ -1,5 +1,4 @@
 // função para fetch do catálogo
-  
 async function fetchProducts(categoryName) {
     const apiUrl = 'https://api.escuelajs.co/api/v1/products';
   
@@ -98,6 +97,17 @@ function populateProductDetails(product) {
     // Update Product Description
     var productDescription = productContainer.querySelector('.product-detail-description');
     productDescription.textContent = "Descrição: " + product.description;
+
+    // Add to Cart Button
+    var addToCartBtn = productContainer.querySelector('.add-to-cart-btn');
+
+    // Set the `data-id` attribute to the product's unique ID
+    addToCartBtn.setAttribute('data-id', product.id);
+    
+    if (!addToCartBtn.hasAttribute('data-bound')) {
+        bindAddToCartListener(addToCartBtn, product);
+        addToCartBtn.setAttribute('data-bound', 'true'); // mark it so we don't bind again
+    }
 }
 
 
@@ -168,6 +178,78 @@ function populateProductMain(products) {
         productCount++;
     }
 }
+
+// funções do carrinho
+
+
+// armazenamento local na web
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+function bindAddToCartListener(button, product) {
+    // função que cria o event listener de click para 
+    button.addEventListener('click', function(e) {
+        const productId = e.target.getAttribute('data-id');
+        // Assuming you have a reference to the products you fetched 
+        // or a function to get the product by its ID:
+        if (product.id == productId) { // Comparing the product's ID with the button's data-id attribute
+            addToCart(product);
+        }
+    });
+}
+
+function addToCart(product) {
+    // Check if the product is already in the cart
+    const existingProduct = cart.find(p => p.id === product.id);
+
+    if (existingProduct) {
+        // If product already exists in cart, increment its quantity by 1 (or however you'd like to handle quantity)
+        existingProduct.quantity += 1;
+    } else {
+        // If product doesn't exist in cart, add it with a quantity of 1
+        product.quantity = 1;
+        cart.push(product);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    updateCartCount();
+
+    console.log(cart)
+
+}
+
+function generateCartSummaryHTML(cart) {
+
+    let total = 0;
+    let html = '<h4>Resumo da compra</h4><dl>';
+
+    for (let i = 0; i < cart.length; i++) {
+        const product = cart[i];
+        html += `<dt>${i + 1}. ${product.title}</dt>`;  
+        html += `<dd>$${product.price.toFixed(2)}</dd>`;
+        total += product.price;
+    }
+
+    html += `<dt>Total</dt>`;
+    html += `<dd>$${total.toFixed(2)}</dd>`;
+    html += '</dl>';
+
+    return html;
+}
+
+function updateCartCount() {
+    const cartCountElement = document.querySelector('.cart-count');
+    cartCountElement.textContent = cart.length;  // Assuming 'cart' is your array of products
+}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -97,13 +97,11 @@
             </button>
             <!-- End Search Bar and Icon -->
             <!-- Cart Icon -->
-            <button
-              class="btn btn-outline-success-light ml-2 my-sm-0"
-              href="#"
-              role="button"
-            >
+            <a class="btn btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
               <i class="fas fa-shopping-cart"></i>
-            </button>
+              <span class="cart-count">0</span> <!-- This will display the cart count -->
+            </a>
+
           </form>
           <!-- End Cart Icon -->
         </div>
@@ -263,6 +261,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetchMainProducts();
+        updateCartCount();
       });
     </script>
   </body>

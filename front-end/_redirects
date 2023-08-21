@@ -4,5 +4,6 @@
 /contact/*      /pages/indexContact.html  200
 /userlogin/*      /pages/indexUserLogin.html  200
 /usersign/*      /pages/indexUserSign.html  200
+/usercheckout/*      /pages/indexUserCheckout.html  200
 
 /* /indexMain.html 200

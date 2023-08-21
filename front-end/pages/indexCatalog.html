@@ -17,14 +17,14 @@
   </head>
 
   <body>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+ <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <div class="d-flex-justify">
       <a class="navbar-brand" href="/main">
         <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
         <img
-          src="images/logo.png"
+          src="../images/logo.png"
           alt="Logo"
           style="width: 120px; height: 120px"
         />
@@ -92,13 +92,11 @@
         </button>
         <!-- End Search Bar and Icon -->
         <!-- Cart Icon -->
-        <button
-          class="btn btn-outline-success-light ml-2 my-sm-0"
-          href="#"
-          role="button"
-        >
+        <a class="btn btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
           <i class="fas fa-shopping-cart"></i>
-        </button>
+          <span class="cart-count">0</span> <!-- This will display the cart count -->
+        </a>
+
       </form>
       <!-- End Cart Icon -->
     </div>
@@ -148,6 +146,7 @@
           }
       
           fetchProducts(categoryName);
+          updateCartCount();
       });
       </script>
       

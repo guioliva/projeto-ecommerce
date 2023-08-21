@@ -12,131 +12,126 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="d-flex-justify">
-          <a class="navbar-brand" href="#">
-            <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
-            <img
-              src="images/logo.png"
-              alt="Logo"
-              style="width: 120px; height: 120px"
-            />
-          </a>
-        </div>
-        <div class="d-flex-content">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown"></li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="categoriesDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Categorias</a
-                >
-                <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                  <a class="dropdown-item" href="#">Desenho e Ilustração</a>
-                  <a class="dropdown-item" href="#">Fotografia</a>
-                  <a class="dropdown-item" href="#">Pintura</a>
-                  <a class="dropdown-item" href="#">Tipografia</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Crie sua conta</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="d-flex-around">
-          <!-- Search Bar and Icon -->
-          <form class="form-inline my-2 my-lg-0" role="search">
-            <input
-              class="form-control my-2 my-sm-0"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success-light my-2 my-sm-0"
-              type="submit"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-            <!-- End Search Bar and Icon -->
-            <!-- Cart Icon -->
-            <button
-              class="btn btn-outline-success-light ml-2 my-sm-0"
-              href="#"
-              role="button"
-            >
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-          </form>
-          <!-- End Cart Icon -->
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="d-flex-justify">
+        <a class="navbar-brand" href="/main">
+          <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
+          <img
+            src="../images/logo.png"
+            alt="Logo"
+            style="width: 120px; height: 120px"
+          />
+        </a>
+      </div>
+      <div class="d-flex-content">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown"></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="categoriesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Categorias</a
+              >
+              <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <a class="dropdown-item" href="/catalog?category=Others">Street Art</a>
+                <a class="dropdown-item" href="/catalog?category=Clothes">Fotografia</a>
+                <a class="dropdown-item" href="/catalog?category=Others">Pintura</a>
+                <a class="dropdown-item" href="/catalog?category=Tipografia">Tipografia</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/userlogin">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/usersign">Crie sua conta</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- End Navigation -->
-    </nav>
+      <div class="d-flex-around">
+        <!-- Search Bar and Icon -->
+        <form class="form-inline my-2 my-lg-0" role="search">
+          <input
+            class="form-control my-2 my-sm-0"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success-light my-2 my-sm-0"
+            type="submit"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- End Search Bar and Icon -->
+          <!-- Cart Icon -->
+          <a class="btn btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span> <!-- This will display the cart count -->
+          </a>
+
+        </form>
+        <!-- End Cart Icon -->
+      </div>
+    </div>
+    <!-- End Navigation -->
+  </nav>
 
     <div class="container checkout-container">
       <h2>Checkout</h2>
       <form id="checkoutForm">
         <div class="form-group">
-          <label for="fullName">Full Name</label>
+          <label for="fullName">Nome</label>
           <input type="text" class="form-control" id="fullName" required />
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">E-mail</label>
           <input type="email" class="form-control" id="email" required />
         </div>
         <div class="form-group">
-          <label for="address">Address</label>
+          <label for="address">Endereço</label>
           <input type="text" class="form-control" id="address" required />
         </div>
         <div class="form-group">
-          <label for="city">City</label>
+          <label for="city">Cidade</label>
           <input type="text" class="form-control" id="city" required />
         </div>
         <div class="form-group">
-          <label for="zipCode">ZIP Code</label>
+          <label for="zipCode">CEP</label>
           <input type="text" class="form-control" id="zipCode" required />
         </div>
         <div class="form-group">
-          <label for="cardNumber">Card Number</label>
+          <label for="cardNumber">Número do cartão</label>
           <input type="text" class="form-control" id="cardNumber" required />
         </div>
         <div class="form-group">
-          <label for="expiration">Expiration Date</label>
+          <label for="expiration">Validade</label>
           <input type="text" class="form-control" id="expiration" required />
         </div>
         <div class="form-group">
@@ -145,20 +140,13 @@
         </div>
 
         <div class="checkout-summary">
-          <h4>Order Summary</h4>
-          <dl>
-            <dt>Product 1</dt>
-            <dd>$99.99</dd>
-            <dt>Product 2</dt>
-            <dd>$79.99</dd>
-            <dt>Total</dt>
-            <dd>$179.98</dd>
-          </dl>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block">
-          Place Order
-        </button>
+        <button type="submit" class="btn btn-primary btn-block">Finalizar compra</button>
+        <!-- New Clear Cart button -->
+        <button type="button" id="clearCartBtn" class="btn btn-warning btn-block">Limpar carrinho</button>
+
+        
       </form>
     </div>
 
@@ -180,7 +168,26 @@
         </p>
       </div>
     </footer>
+    <script src="../app/app.js"></script>
+    <script> document.querySelector('.checkout-summary').innerHTML = generateCartSummaryHTML(cart)</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const clearCartButton = document.getElementById('clearCartBtn');
+    updateCartCount();
 
+    clearCartButton.addEventListener('click', function() {
+      
+        cart = [];
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        updateCartCount();
+
+  
+      });
+    });
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

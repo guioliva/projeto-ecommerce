@@ -29,7 +29,7 @@
       <a class="navbar-brand" href="/main">
         <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
         <img
-          src="images/logo.png"
+          src="../images/logo.png"
           alt="Logo"
           style="width: 120px; height: 120px"
         />
@@ -97,13 +97,11 @@
         </button>
         <!-- End Search Bar and Icon -->
         <!-- Cart Icon -->
-        <button
-          class="btn btn-outline-success-light ml-2 my-sm-0"
-          href="#"
-          role="button"
-        >
+        <a class="btn btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
           <i class="fas fa-shopping-cart"></i>
-        </button>
+          <span class="cart-count">0</span> <!-- This will display the cart count -->
+        </a>
+
       </form>
       <!-- End Cart Icon -->
     </div>
@@ -156,5 +154,14 @@
         </p>
       </div>
     </footer>
+    <script src="../app/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          updateCartCount();
+      });
+      </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
