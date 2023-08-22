@@ -1,6 +1,6 @@
 // função para fetch do catálogo
 async function fetchProducts(categoryName) {
-    const apiUrl = 'https://api.escuelajs.co/api/v1/products';
+    const apiUrl = 'https://udecora-backend.up.railway.app/products?linesPerPage=36';
   
     try {
         const response = await fetch(apiUrl);
@@ -8,7 +8,7 @@ async function fetchProducts(categoryName) {
 
         // If categoryName is provided, filter products based on that category
         if (categoryName) {
-            products = products.filter(product => product.category.name === categoryName);
+            products = products.filter(product => product.categories[0].name === categoryName);
         }
 
         populateProductCatalog(products);
