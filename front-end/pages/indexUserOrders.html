@@ -23,7 +23,7 @@
       <a class="navbar-brand" href="/main">
         <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
         <img
-          src="images/logo.png"
+          src="../images/logo.png"
           alt="Logo"
           style="width: 120px; height: 120px"
         />
@@ -56,9 +56,9 @@
               >Categorias</a
             >
             <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-              <a class="dropdown-item" href="/catalog?category=Others">Street Art</a>
-              <a class="dropdown-item" href="/catalog?category=Clothes">Fotografia</a>
-              <a class="dropdown-item" href="/catalog?category=Others">Pintura</a>
+              <a class="dropdown-item" href="/catalog?category=Pintura">Street Art</a>
+              <a class="dropdown-item" href="/catalog?category=Desenho e Ilustração">Fotografia</a>
+              <a class="dropdown-item" href="/catalog?category=Fotografia">Pintura</a>
               <a class="dropdown-item" href="/catalog?category=Tipografia">Tipografia</a>
             </div>
           </li>
@@ -91,13 +91,11 @@
         </button>
         <!-- End Search Bar and Icon -->
         <!-- Cart Icon -->
-        <button
-          class="btn btn-outline-success-light ml-2 my-sm-0"
-          href="#"
-          role="button"
-        >
+        <a class="btn-cart btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
           <i class="fas fa-shopping-cart"></i>
-        </button>
+          <span class="cart-count">0</span> <!-- This will display the cart count -->
+        </a>
+
       </form>
       <!-- End Cart Icon -->
     </div>

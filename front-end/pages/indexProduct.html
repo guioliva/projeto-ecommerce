@@ -18,91 +18,91 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="d-flex-justify">
-          <a class="navbar-brand" href="/main">
-            <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
-            <img
-              src="../images/logo.png"
-              alt="Logo"
-              style="width: 120px; height: 120px"
-            />
-          </a>
-        </div>
-        <div class="d-flex-content">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown"></li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="categoriesDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Categorias</a
-                >
-                <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                  <a class="dropdown-item" href="/catalog?category=Others">Street Art</a>
-                  <a class="dropdown-item" href="/catalog?category=Clothes">Fotografia</a>
-                  <a class="dropdown-item" href="/catalog?category=Others">Pintura</a>
-                  <a class="dropdown-item" href="/catalog?category=Tipografia">Tipografia</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Contato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/userlogin">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/usersign">Crie sua conta</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="d-flex-around">
-          <!-- Search Bar and Icon -->
-          <form class="form-inline my-2 my-lg-0" role="search">
-            <input
-              class="form-control my-2 my-sm-0"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success-light my-2 my-sm-0"
-              type="submit"
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="d-flex-justify">
+      <a class="navbar-brand" href="/main">
+        <!-- Replace "path/to/logo.png" with the actual URL of your logo image -->
+        <img
+          src="../images/logo.png"
+          alt="Logo"
+          style="width: 120px; height: 120px"
+        />
+      </a>
+    </div>
+    <div class="d-flex-content">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown"></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="categoriesDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Categorias</a
             >
-              <i class="fas fa-search"></i>
-            </button>
-            <!-- End Search Bar and Icon -->
-            <!-- Cart Icon -->
-            <a class="btn-cart btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="cart-count">0</span> <!-- This will display the cart count -->
-            </a>
-
-          </form>
-          <!-- End Cart Icon -->
-        </div>
+            <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <a class="dropdown-item" href="/catalog?category=Pintura">Street Art</a>
+              <a class="dropdown-item" href="/catalog?category=Desenho e Ilustração">Fotografia</a>
+              <a class="dropdown-item" href="/catalog?category=Fotografia">Pintura</a>
+              <a class="dropdown-item" href="/catalog?category=Tipografia">Tipografia</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userlogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/usersign">Crie sua conta</a>
+          </li>
+        </ul>
       </div>
-      <!-- End Navigation -->
-    </nav>
+    </div>
+    <div class="d-flex-around">
+      <!-- Search Bar and Icon -->
+      <form class="form-inline my-2 my-lg-0" role="search">
+        <input
+          class="form-control my-2 my-sm-0"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success-light my-2 my-sm-0"
+          type="submit"
+        >
+          <i class="fas fa-search"></i>
+        </button>
+        <!-- End Search Bar and Icon -->
+        <!-- Cart Icon -->
+        <a class="btn-cart btn-outline-success-light ml-2 my-sm-0" href="/usercheckout" role="button">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span> <!-- This will display the cart count -->
+        </a>
+
+      </form>
+      <!-- End Cart Icon -->
+    </div>
+  </div>
+  <!-- End Navigation -->
+</nav>
 
     <!-- products info -->
     <div id="products-info" class="container product-detail-container">

@@ -84,12 +84,12 @@ function populateProductDetails(product) {
 
     // Update Image
     var productImage = productContainer.querySelector('.product-detail-image');
-    productImage.src = product.images[0];
-    productImage.alt = product.title;
+    productImage.src = product.imgUrl;
+    productImage.alt = product.name;
 
     // Update Product Title
     var productName = productContainer.querySelector('.product-detail-title');
-    productName.textContent = product.title;
+    productName.textContent = product.name;
 
     // Update Product Price
     var productPrice = productContainer.querySelector('.product-detail-price');
@@ -120,7 +120,7 @@ async function fetchMainProducts() {
     try {
       const response = await fetch(apiUrl);
       const data = await response.json();
-      const products = data
+      const products = data.content
       populateProductMain(products);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -157,11 +157,11 @@ function populateProductMain(products) {
         productCardInner.className = 'product-card';
   
         var productImage = document.createElement('img');
-        productImage.src = product.images[0];
-        productImage.alt = product.title;
+        productImage.src = product.imgUrl;
+        productImage.alt = product.name;
   
         var productName = document.createElement('h4');
-        productName.textContent = product.title;
+        productName.textContent = product.name;
   
         var productPrice = document.createElement('p'); 
         productPrice.className = 'product-price'; 
