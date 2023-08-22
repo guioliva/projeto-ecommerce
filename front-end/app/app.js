@@ -5,7 +5,7 @@ async function fetchProducts(categoryName) {
     try {
         const response = await fetch(apiUrl);
         let products = await response.json();
-        const data = products.content
+        let data = products.content
 
         // If categoryName is provided, filter products based on that category
         if (categoryName) {
@@ -42,11 +42,11 @@ async function fetchProducts(categoryName) {
         productCardInner.className = 'product-card';
   
         var productImage = document.createElement('img');
-        productImage.src = product.images[0];
-        productImage.alt = product.title;
+        productImage.src = product.imgUrl;
+        productImage.alt = product.name;
   
         var productName = document.createElement('h4');
-        productName.textContent = product.title;
+        productName.textContent = product.name;
   
         var productPrice = document.createElement('p'); // Creating a paragraph for price
         productPrice.className = 'product-price'; 
