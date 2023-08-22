@@ -5,10 +5,11 @@ async function fetchProducts(categoryName) {
     try {
         const response = await fetch(apiUrl);
         let products = await response.json();
+        const data = products.content
 
         // If categoryName is provided, filter products based on that category
         if (categoryName) {
-            products = products.filter(product => product.categories[0].name === categoryName);
+            products = data.filter(product => product.categories[0].name === categoryName);
         }
 
         populateProductCatalog(products);
