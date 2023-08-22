@@ -226,7 +226,7 @@ function generateCartSummaryHTML(cart) {
 
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        html += `<dt>${i + 1}. ${product.title}</dt>`;  
+        html += `<dt>${i + 1}. ${product.name}</dt>`;  
         html += `<dd>$${product.price.toFixed(2)}</dd>`;
         total += product.price;
     }
