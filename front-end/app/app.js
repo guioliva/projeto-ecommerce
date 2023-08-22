@@ -67,7 +67,7 @@ async function fetchProducts(categoryName) {
 // funções para popular página do produto
 
 async function fetchProductsDetail(productId) {
-    var apiUrl = 'https://api.escuelajs.co/api/v1/products/' + productId;
+    var apiUrl = 'https://udecora-backend.up.railway.app/products/' + productId;
 
     try {
         const response = await fetch(apiUrl);
@@ -115,7 +115,7 @@ function populateProductDetails(product) {
 // função para carroussel dos mais vendidos
 
 async function fetchMainProducts() {
-    var apiUrl = 'https://api.escuelajs.co/api/v1/products/';
+    var apiUrl = 'https://udecora-backend.up.railway.app/products?linesPerPage=36';
   
     try {
       const response = await fetch(apiUrl);
