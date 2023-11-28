@@ -1,6 +1,6 @@
 // função para fetch do catálogo
 async function fetchProducts(categoryName) {
-    const apiUrl = 'https://udecora-backend.up.railway.app/products?linesPerPage=36';
+    const apiUrl = '';
   
     try {
         const response = await fetch(apiUrl);
@@ -67,7 +67,7 @@ async function fetchProducts(categoryName) {
 // funções para popular página do produto
 
 async function fetchProductsDetail(productId) {
-    var apiUrl = 'https://udecora-backend.up.railway.app/products/' + productId;
+    var apiUrl = '' + productId;
 
     try {
         const response = await fetch(apiUrl);
@@ -115,7 +115,7 @@ function populateProductDetails(product) {
 // função para carroussel dos mais vendidos
 
 async function fetchMainProducts() {
-    var apiUrl = 'https://udecora-backend.up.railway.app/products?linesPerPage=36';
+    var apiUrl = '';
   
     try {
       const response = await fetch(apiUrl);
@@ -240,43 +240,42 @@ function generateCartSummaryHTML(cart) {
 
 function updateCartCount() {
     const cartCountElement = document.querySelector('.cart-count');
-    cartCountElement.textContent = cart.length;  // Assuming 'cart' is your array of products
+    cartCountElement.textContent = cart.length;  
 }
 
 // função para post de usuário
+function postUser() {
+    var registrationForm = document.getElementById('registrationForm');
 
-function postUser(){
-    document.getElementById("registrationForm").addEventListener("submit", function(event) {
-        event.preventDefault();
+    registrationForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Para prevenir o comportamento padrão do formulário
 
-        // Extract data from the form
-        const firstName = document.getElementById("registrationFirstName").value;
-        const lastName = document.getElementById("registrationLastName").value;
-        const email = document.getElementById("registrationEmail").value;
-        const password = document.getElementById("registrationPassword").value;
+        var email = document.getElementById('registrationEmail').value;
+        var password = document.getElementById('registrationPassword').value;
 
-        // Send the data to your API
-        fetch("https://udecora-backend.up.railway.app/users", {
-            method: "POST",
+        var data = {
+            email: email,
+            senha: password // Certifique-se de que 'senha' corresponde ao nome esperado no back-end
+        };
+
+        fetch('http://localhost:3000/api/users/register', {
+            method: 'POST',
             headers: {
-                "Content-Type": "application/json"
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                firstName: firstName,
-                lastName: lastName,
-                email: email,
-                password: password
-            })
+            body: JSON.stringify(data),
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            console.log('Success:', data);
+            // Aqui você pode redirecionar o usuário ou fazer algo com os dados recebidos
         })
-        .catch(error => {
-            console.error("Error:", error);
+        .catch((error) => {
+            console.error('Error:', error);
         });
     });
 }
+
 
 
 
